@@ -31,8 +31,6 @@
 
 img {
   max-width: 100%;
-  /* border: 1px solid red; */
-  /* border-radius: 20px; */
 }
 h1,
 h2 {
@@ -63,17 +61,7 @@ body {
   background-color: var(--clr-white);
 }
 /* Utility classes */
-.btn {
-  text-decoration: none;
-  color: inherit;
-  font-family: var(--ff-sans);
-  font-size: var(--fs-300);
-  font-weight: var(--fw-700);
-  display: inline-block;
-}
-.btn span {
-  margin-left: 1rem;
-}
+
 .container {
   max-width: 75rem;
   margin-inline: max(5vw, 1rem);
@@ -89,30 +77,8 @@ body {
 .flow-content--large > * + * {
   margin-top: var(--flow-space, 5rem);
 }
-.d_flex {
-  display: flex;
-}
-.d_grid {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  border: 1px solid red;
-}
-.stories_grid {
-  display: grid;
-}
-.grid_item {
-  justify-self: center;
-  align-self: center;
-  border: 1px solid green;
-}
 
-.split_2,
-.split_3 {
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
-}
-Header {
+header {
   margin-block-start: max(2rem, 10vw);
   text-align: center;
   display: flex;
@@ -120,7 +86,7 @@ Header {
   justify-content: center;
   align-items: center;
 }
-Header p {
+header p {
   font-weight: var(--fw-400);
   max-width: 25rem;
 }
@@ -132,7 +98,6 @@ Header p {
   gap: 2rem;
 }
 .grid-item {
-  /* border: 1px solid red; */
   border-radius: var(--br);
   box-shadow: 0 8.5px 17px -6.22px hsl(213.42, 46.75%, 66.86%, 0.5);
   position: relative;
